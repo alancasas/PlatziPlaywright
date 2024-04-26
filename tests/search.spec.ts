@@ -4,7 +4,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto('https://playwright.dev/docs/intro');
 });
 
-test('Realizar una busqueda que no tenga resultados', async ({ page }) => {
+test('Realizar una busqueda que no tenga resultados box', async ({ page }) => {
   //await page.getByRole('button').click();
   await page.getByRole('button', { name: 'Search' }).click(); 
 
